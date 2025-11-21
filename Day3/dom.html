@@ -1,0 +1,26 @@
+<html>
+     <body>
+    <h1 id="h1">Hello guys</h1>
+     <h2> how are you</h2>
+     <button id="btn">Press me</button>
+     <script>
+        const aa = document.getElementById('h1');
+        aa.addEventListener('mouseover',(event) => {
+            aa.textContent = "I clicked";
+            aa.style.color = 'red';
+            aa.style.backgroundColor='yellow';
+        });
+
+        btn.addEventListener('click', (event)=>{
+            bt.innerHTML="<h2>Details sent</h2>";
+            bt.style.color='blue';
+            alert("form submitted");
+        });
+        const bt = document.getElement.getElementById('btn');
+        btn.textContent = 0;
+        document.addEventListener('keydown',(event)=>{
+        btn.textContent=Number(btn.textContent)+1;
+        });
+     </script>
+    </body>
+</html>

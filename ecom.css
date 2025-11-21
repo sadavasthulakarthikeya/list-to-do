@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f6f6;
+}
+
+header {
+    background: rgb(13, 13, 59);
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.banner {
+    background: #eef6ff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.products {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.product-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    max-height: 120%;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(168, 13, 13, 0.04);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    background: darkslateblue;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.logoimage{
+    float: left;
+}

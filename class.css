@@ -1,0 +1,43 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(54, 21, 84);
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+.logo{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 2em;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.banner{
+    background-color: aliceblue;
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.product-list{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}

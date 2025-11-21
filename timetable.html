@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 20px;
+        }
+        table{
+            border-collapse:collapse;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 0 8px #ccc;
+        }
+        th,td{
+           border: 1px solid black; 
+           padding: 14px 5px;
+           text-align: center;
+        }
+        .SCIENCE{background-color: rgb(118, 245, 118);}
+        .MATHS{background-color: rgb(224, 180, 224);}
+        .ENGLISH{background-color: rgb(247, 156, 164);}
+        .TAMIL{background-color: rgb(255, 207, 119);}
+        .TELUGU{background-color: rgb(180, 218, 242);}
+        .PET{background-color: gainsboro;}
+        .TEABREAK{background-color: rgb(205, 207, 156);}
+        .LUNCHBREAK{background-color: pink;}
+        .WEEKEND-HOLIDAY{background-color: rgb(200, 228, 220);}
+        .time{background-color: white;}
+        .day{background-color: rgb(235, 180, 98);}
+    </style>
+    <table>
+    <tr style="background-color: rgb(247, 247, 134);">
+        <td class="time">Day/Time</td>
+        <td>8:00-9:00</td>
+        <td>9:00-10:15</td>
+        <td>10:15-10:30</td>
+        <td>10:30-12:30</td>
+        <td>12:30-1:30</td>
+        <td>1:30-2:30</td>
+        <td>2:30-2:45</td>
+        <td>2:45-3:30</td>
+    </tr>
+    <tr>
+        <td class="day">Monday</td>
+        <td class="SCIENCE">SCIENCE</td>
+        <td class="MATHS">MATHS</td>
+        <td class="TEABREAK" rowspan="6">TEABREAK</td>
+        <td class="SCIENCE">SCIENCE</td>
+        <td class="LUNCHBREAK" rowspan="6">LUNCHBREAK</td>
+        <td class="TAMIL">TAMIL</td>
+        <td class="TEABREAK" rowspan="6">TEABREAK</td>
+        <td CLASS="ENGLISH">ENGLISH</td>
+    </tr>
+    <tr>
+        <td class="day">Tuesday</td>
+        <td class="ENGLISH" colspan="2">ENGLISH</td>
+        <td class="TAMIL">TAMIL</td>
+        <td class="SCIENCE">SCIENCE</td>
+        <td>PET</td>
+    </tr>
+    <tr>
+        <td class="day">Wednesday</td>
+        <td class="TAMIL">TAMIL</td>
+        <td class="SCIENCE">SCIENCE</td>
+        <td class="TELUGU">TELUGU</td>
+        <td class="ENGLISH" rowspan="2">ENGLISH</td>
+        <td class="TAMIL">TAMIL</td>
+    </tr>
+    <tr>
+        <td class="day">Thursday</td>
+        <td class="TELUGU">TELUGU</td>
+        <td class="ENGLISH">ENGLISH</td>
+        <td class="SCIENCE">SCIENCE</td>
+        <td class="SCIENCE">SCIENCE</td>
+    </tr>
+    <tr>
+        <td class="day">Friday</td>
+        <td class="SCIENCE" colspan="2">SCIENCE</td>
+        <td class="MATHS" rowspan="2">MATHS</td>
+        <td class="MATHS" >MATHS</td>
+        <td class="TELUGU" rowspan="2">TELUGU</td>
+    </tr>
+    <tr>
+        <td class="day">Saturday</td>
+        <td class="ENGLISH">ENGLISH</td>
+        <td class="TAMIL">TAMIL</td>
+        <td>PET</td>
+    </tr>
+    <tr>
+        <td class="day">Sunday</td>
+        <td class="WEEKEND-HOLIDAY" colspan="8">WEEKEND-HOLIDAY</td>
+    </tr>
+
+    </table>
+</body>
+</html>

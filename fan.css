@@ -1,0 +1,99 @@
+body {
+  background: #f3f7fb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.fan-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px #4972b520;
+  padding: 48px 38px 28px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fan {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 38px;
+  /* Ensures fan rotates about its true center */
+  transform-origin: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blade {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 66px;
+  background: linear-gradient(180deg,#7197ce 65%,#355d97 100%);
+  border-radius: 10px 10px 30px 30px;
+  box-shadow: 0 4px 14px #aac6ee38;
+  opacity: 0.93;
+  /* Each blade rotates then is pushed outward from the dot */
+  transform-origin: 50% 22%;
+}
+
+.blade1 { transform: rotate(-20deg) translateY(-38px); }
+.blade2 { transform: rotate(100deg) translateY(-38px); }
+.blade3 { transform: rotate(220deg) translateY(-38px); }
+
+/* Perfectly centered black dot */
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 43px;
+  height: 43px;
+  background: #23262d;
+  border-radius: 50%;
+  border: 4.5px solid #e8ecf2;
+  box-shadow: 0 2px 13px #bbb8;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* Controls layout */
+.controls {
+  display: flex;
+  gap: 20px;
+  margin-top: 14px;
+}
+
+button {
+  background: #0e2f4d;
+  color: #fff;
+  border: none;
+  min-width: 55px;
+  padding: 11px 0;
+  border-radius: 10px;
+  font-size: 1.15em;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  box-shadow: 0 2px 7px #27649510;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+button:hover,
+button.active {
+  background: #195397;
+}
+
+button#onoff {
+  background: #11263d;
+}
+
+button#onoff.active {
+  background: #235bfd;
+}

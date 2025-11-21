@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>List</title>
+    </head>
+    <body>
+        <ul>
+            <li>Coffee</li>
+            <li>tea</li>
+            <li>boost</li>
+        </ul>
+        <ol>
+            <li>Coffee</li>
+            <li>tea</li>
+            <li>boost</li>
+        </ol>
+        <dl>
+            <dt>coffeee</dt>
+            <dd>black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>white cold drink</dd>
+        </dl>
+        <ul style="list-style-type: disc;">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+        <ul style="list-style-type:circle;">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+        <ul style="list-style-type:lower-roman;">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+        <ul>
+            <li>coffee</li>
+            <ul>
+                <li>hot coffee</li>
+                <li>cold coffee</li>
+            </ul>
+            <li>tea</li>
+            <ul>
+                <li>black tea</li>
+                <li>green tea</li>
+            </ul>
+            <li>milk</li>
+        </ul>
+        <ol type="1">
+            <li>coffee</li>
+            <ol type="A">
+                <li>cold coffee</li>
+                <li>hot coffee</li>
+            </ol>
+            <li>tea</li>
+            <ol type="a">
+                <li>black tea</li>
+                <li>green tea</li>
+            </ol>
+            <li>milk with boost</li>
+        </ol>
+        <ol start="51">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ol>
+        <div style="background-color:black;color:white;padding:20px;">
+        <h2>LONDON</h2>
+        <p>London is the capital city of england. it is the most populous city 
+            in the united kingdom, with a metropolitan area of over 13 million 
+            inhabitants.</p>
+        <p>Standing on th eriver thames, London has beem a major settlement for
+            two miilennia, its history going back to its founding by the romans,
+            who named it londinium.
+        </p>
+        </div>
+        <p>This is an inline span <span style="color:blue;font-weight: bold;">hello workd</span>
+        element inside a paragraph.</p>
+        Lorem Ipsum <div style="background-color:#fff4a3;">iam a div</div>dolor sit amet.
+        <div style="background-color: #fff4a3;color: darkgreen;padding:20px;">
+            <h2>London</h2>
+            <p>London is the capital city of england.</p>
+            <p>London has over 9 million inhabitants.</p>
+        </div>
+        <p> </p>
+        <style>
+            div.mycontainer{
+                width:100%;
+                overflow:auto;
+                display: flex;
+            }
+            div.mycontainer div{
+                width:33.33%;
+                float:left;
+            }
+        </style>
+        <div class="mycontainer">
+            <div style="background-color:#fff4a3">
+                <h2>LONDON</h2>
+                <p>London is the capital city of <span style="color:blue">England</span></p>
+                <p>London has over 9 million inhabitants</p>
+            </div>
+            <div style="background-color:#FFC0C7">
+                <h2>OSLO</h2>
+                <p>Oslo is the capital of <span style="color:blue">Norway</span></p>
+                <p>Oslo has over 700,000 inhabitants</p>
+            </div>
+            <div style="background-color:#D9EEE1">
+                <h2>ROME</h2>
+                <p>Rome is the capital city of <span style="color:blue">Italy</span></p>
+                <p>Rome has over 4 million inhabitants</p>
+            </div>
+        </div>
+        <style>
+            div.city{
+                background-color: tomato;
+                color: white;
+                border : 2px solid black;
+                margin : 20px;
+                padding: 20px;
+            }
+        </style>
+            <div class="city">
+                <h2>LONDON</h2>
+                <p>london is the capital of england</p>
+            </div>
+            <div class="city">
+                <h2>PARIS</h2>
+
+
+                <p>paris is the capital of france</p>
+            </div>
+            <div class="city">
+                <h2>TOKYO</h2>
+                <p>tokyo is the capital of japan</p>
+            </div>
+        </div>
+        <button onclick="myfunction()">Hide elements</button>
+        <h2 class="cit">LONDON</h2>
+        <p>London is the capital of england</p>
+        <h2 class="cit">PARIS</h2>
+        <p>paris is the capital of france</p>
+        <h2 class="cit">TOKYO</h2>
+        <p>tokyo is the capital of japan</p>
+        <script>
+            function myfunction(){
+                var x = document.getElementsByClassName("cit");
+                for(var i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                }
+            }
+        </script>
+        <style>
+        #header{
+            background-color:lightblue;
+            color:black;
+            padding:40px;
+            text-align: center;
+        }
+        </style>
+        <h1 id="header">my heading</h1>
+        <p>  </p>
+        <h1 id="myheader">HELLO WORLD</h1>
+        <!--<button onclick="displayresult()">changetext</button>-->
+        <script>
+            function displayresult(){
+                document.getElementById("myheader").innerHTML="Have a nice day!";
+            }
+        </script>
+        <iframe src="images/range rover wallpaper.webp" name="iframe_a" height="300px" width="300px" title="iframe Example"></iframe>
+        <p><a href="images/car image.jpg" target="iframe_a">W3Schools.com</a></p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">click me to display date and time</button>
+        <p id="demo"></p>
+        <h1>javascript</h1>
+        <button type="button" onclick="myfun()">click me</button>
+            <p id="demo">this is a demonstration.</p>
+            <script>
+                function myfun(){
+                    document.getElementById("demo").innerHTML="hello javascript!";
+                }
+            </script>
+            <script>function karthik(){
+                document.getElementById("run").innerHTML="Hello Javascript!"
+            }</script>
+            <p id="run">A paragraph</p>
+            <button type="button" onclick="karthik()">Try it</button>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <img src="images/carrrr.jpg"style="width:100%;height:auto">
+    </body>
+</html>

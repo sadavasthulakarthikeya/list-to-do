@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height: 1500px;">
+    <h1 id="sist">Hello world</h1>
+    <p id="sis">This is a sample Html document</p>
+    <button id="butto">ok</button><br><br>
+    <button id="count">0</button><br>
+    <p id="incr">0</p>
+    <button id="incre">+</button>
+
+    <script>
+        //document.getElementById("sist").innerHTML = "my name is karthik";
+        /*function abc(){
+            const a = document.getElementById("sist");
+            a.style.color = "red"
+            a.scrollIntoView({behavior: "smooth"});
+            const x = document.getElementById("sis").cloneNode(true);
+            document.body.appendChild(x);
+        }
+        //abc();
+        function abcd(){
+            const x = document.getElementById("sisst");
+            x.style.backgroundColor = "yellow";
+            x.style.transform = "scale(1)";
+        }
+        abcd();
+            */
+        const a = document.getElementById("butto");
+        a.addEventListener("click", function() {
+            alert("hello world");
+        });
+        let c = 0;
+        let e = document.getElementById("count");
+        e.addEventListener("click", function(){
+            c++;
+            this.innerHTML=c;
+        })
+        /*let x = 0;
+        let y = document.getElementById("incre");
+        y.addEventListener("click", function(){
+            x++;
+            z = document.getElementById("incr");
+            innerHTML = z;
+        })*/
+       let x = 0;
+       document.getElementById("incre").onclick=function(){
+        x+=5;
+        document.getElementById("incr").innerHTML=x;
+       }
+       let b = 10;
+       let d = 20;
+       let f = "a * b";
+       let g = eval(f);
+       console.log(g);
+    </script>
+</body>
+</html>

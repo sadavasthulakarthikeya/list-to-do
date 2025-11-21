@@ -1,0 +1,222 @@
+
+<html>
+    <head>
+        <title>tables</title>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse:collapse ;
+            }
+        </style>
+    </head>
+    <body>
+           <h2>set the first colume to 70% of the table width</h2>
+        <table style="width:100%">
+            <tr>
+                <td style="width:70%">Firstname</td>
+                <td style="width:20%">last name</td>
+                <td>Age</td>
+            </tr>
+            <tr>
+                <td style="width:50%">vinay</td>
+                <td>soudani</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>karthikeya</td>
+                <td>sadavasthula</td>
+                <td>19</td>
+            </tr>
+        </table>
+        <table style="width:100%">
+            <tr>
+                <th style="text-align: center;">Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+             <tr>
+                <td>vinay</td>
+                <td>soudani</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>karthikeya</td>
+                <td>sadavasthula</td>
+                <td>19</td>
+        </table>
+    </body>
+</html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <p> </p>
+        <table style="width:100%">
+            <caption>names</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>soudani</td>
+                <td>vinay</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>karthikeya</td>
+                <td>sadavasthula</td>
+                <td>19</td>
+                </tr>
+        </table>
+        <table style="width:100%">
+            <caption>details</caption>
+            <!--<style>
+                th,td{
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    padding-left:30px;
+                    padding-right:40px;
+                }
+            </style>-->
+            <style>
+                table{
+                    border-spacing: 30px;
+                }
+            </style>
+            <tr>
+                <th>Firstname</th>
+                 <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                 <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                 <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+        </tr>
+        </table>
+        <table style="width:100%">
+            <caption>rowspan</caption>
+            <tr>
+                <th>Name</th>
+                <td>abhiram</td>
+            </tr>
+            <tr>
+                <th rowspan="2"> phone number</th>
+                <td>9441065820</td>
+            </tr>
+            <tr>
+                <td>9492794478</td>
+            </tr>
+        </table>
+        <table style="width:100%">
+            <caption>zebra striped table</caption>
+            <style>
+                tr:nth-child(even){
+                    background-color: #D6EEEE;
+                }
+            </style>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                 <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                 <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+        </table>
+        <table style="width:100%">
+            <caption>zebra striped column</caption>
+            <!--<style>
+                td:nth-child(even),th:nth-child(even){
+                    background-color: #D6EEEE;
+                }
+            </style>-->
+
+
+
+
+            
+            <tr>
+                <th>MON</th>
+                <th >TUE</th>
+                <th>WED</th>
+                <th>THUR</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+             <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+             <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+        </table>
+    </body>
+</html>

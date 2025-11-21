@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1 id="t1"> expression</h1>
+<h2 id="t2"> Answer</h2>
+<script>
+let t1 = document.getElementById('t1');
+let t2 = document.getElementById('t2');
+document.addEventListener('keydown',(addEventListener)=>{
+switch(event.key)
+{
+case '+': t1.textContent+=event.key;
+break;
+case '-': t1.textContent+=event.key;
+break;
+case '1': t1.textContent+=event.key;
+break;
+case '2': t1.textContent+=event.key;
+break;
+case 'enter': t2.textContent=eval(t1.textContent);
+break;
+}
+})
+</script>
+</body>
+</html>

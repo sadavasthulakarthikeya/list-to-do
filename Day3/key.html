@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1></h1>
+        <h2>How are you</h2>
+        <button id="btn">press me</button>
+    <script>
+        const bt = document.getElementById('btn');
+        btn.textContent=0;
+        document.addEventListener('keydown',(event) =>{
+            if(event.key=="ArrowUp")
+                btn.textContent = Number(btn.textContent)+1;
+            else if(event.key=="ArrowDown")
+                btn.textContent = Number(btn.textContent)-1;
+            console.log(event.key);
+        });
+    </script>
+    </body>
+</html>
